@@ -34,7 +34,7 @@ INSERT INTO ogrenciler2 (isim,soyisim) VALUES ('Erol','Evren');
 --DQL - DATA QUERY LANG.
 --SELECT
 
-select * FROM ogrenciler2;
+select * FROM ogrenciler2;-- Burdaki * sembolu hersey anlamindadır
 
 
 
