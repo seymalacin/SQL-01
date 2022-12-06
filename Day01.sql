@@ -5,10 +5,10 @@ create database erol;
 
 --DDL -DATA DEFINITION LANG.
 --CREATE -TABLO OLUSTURMA
-CREATE TABLE ogrenciler2
+CREATE TABLE ogrenciler5
 (
-ogrenci_no char(7),
-	isim varchar(20),
+ogrenci_no char(7),-- Uzunlugunu bildigimiz strinkler icin Char kullanillir
+	isim varchar(20),--Uzunlugunu bılmedigimziz setringler icin Varcahar kullanilir
 	soyisim varchar(25),
 	not_ort real,--ondalikli sayilar icin kullanilir (double gibi)
 	kayit_tarih date
@@ -19,7 +19,7 @@ ogrenci_no char(7),
 CREATE TABLE ogrenci_notlari
 AS-- benzer tablodaki başlıklarla ve data tipleriyle yeni bir tablo olusturmak icin
 --parantezler yerine AS kullanip select komutuylaalmak istedigimiz verileri alairiz
-SELECT isim,soyisim,not_ort From ogrenciler2;
+SELECT isim,soyisim,not_ort From ogrenciler;
 
 --DML - DATA MANUPULATION LANG.
 --INSERT(Database'e veri ekleme)
